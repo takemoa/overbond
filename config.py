@@ -1,9 +1,14 @@
 # Database configuration
+
+# The location of the sql lite database file
 DB_NAME = './_db/overbond.db'
+# The name of the table where the records are created. The table is created dynamically based on the DATA_CONFIG values
 TABLE_NAME = 'XICE_BOND'
+
 # How many records to insert in one batch
 INSERT_BATCH_SIZE = 5
-# LOG_FILE
+
+# The path of the log file
 LOG_FILE = './_log/run.log'
 
 # Configuration of the fields that need to be parsed from the input file
