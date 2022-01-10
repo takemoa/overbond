@@ -23,3 +23,19 @@ def setup_logging():
     console.setFormatter(formatter)
     # add the handler to the root logger
     logging.getLogger().addHandler(console)
+
+
+# setup console at DEBUG level
+def setup_logging_for_test():
+    # Console logger
+    # define a new Handler to log to console as well
+    console = logging.StreamHandler()
+    # optional, set the logging level
+    console.setLevel(logging.DEBUG)
+    # set a format which is the same for console use
+    # formatter = logging.Formatter('%(asctime)s %(message)s')
+    formatter = logging.Formatter('%(name)s %(asctime)s %(levelname)s %(message)s')
+    # tell the handler to use this format
+    console.setFormatter(formatter)
+    # add the handler to the root logger
+    logging.getLogger().addHandler(console)

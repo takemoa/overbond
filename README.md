@@ -168,3 +168,10 @@ root 2022-01-09 19:32:47,363 DEBUG - parsed fields:
 root 2022-01-09 19:32:47,363 DEBUG - fields not found: ['CleanBid', 'CleanAsk', 'Last_Price']
 
 ```
+
+### Unit tests
+Run project unit tests (work in progress) in the project directory with the following command
+
+```shell
+python -m unittest tests.py
+```
